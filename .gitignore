@@ -1,0 +1,16 @@
+# Ignorar el archivo commits5.md
+commits5.md
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Archivos de dependencias y compilados
+node_modules/
+*.log
+*.tmp
