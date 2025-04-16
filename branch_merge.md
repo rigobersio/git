@@ -10,3 +10,7 @@
 	a. hacer commit para finalizar la branch experimental
 	b. cambiar a la branch  madre con git checkout <branch-madre>
 	c. merge: git merge <nombre-branch-experimental>
+
+5. Después de un marge las 2 ramas son virtualmente iguales
+incluso un git add no marca diferencia. la diferencia empieza con
+un commit
