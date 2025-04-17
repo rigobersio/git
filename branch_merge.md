@@ -13,4 +13,7 @@
 
 5. Después de un marge las 2 ramas son virtualmente iguales
 incluso un git add no marca diferencia. la diferencia empieza con
-un commit
+un commit.
+
+6. de la misma forma cuando se crea una nueva branch es necesario
+hacer un commit inmediatamente para marcar diferencia.
