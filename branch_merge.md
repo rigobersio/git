@@ -17,3 +17,10 @@ un commit.
 
 6. de la misma forma cuando se crea una nueva branch es necesario
 hacer un commit inmediatamente para marcar diferencia.
+
+7. respecto a GitHub:
+	a. luego de un merge se crea un commit en automático
+	b. entonces un git status no muestra cambios pendientes
+	c. es recomendable hacer un git push -u origin main(o como
+	se llame la rama)
+
