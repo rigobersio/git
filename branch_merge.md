@@ -24,3 +24,7 @@ hacer un commit inmediatamente para marcar diferencia.
 	c. es recomendable hacer un git push -u origin main(o como
 	se llame la rama)
 
+8. luego de que se crea una nueva branch y se hace el primer commit
+cualquier cambio pendiente (sin otro commit) impedirá cambiar a otra
+branch aun haciendo git checkout
+
