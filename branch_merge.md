@@ -31,4 +31,4 @@ hacer un commit para marcar diferencia.
 cualquier cambio pendiente (sin otro commit) impedirá cambiar a otra
 branch aun haciendo git checkout
 
-9. es posible clonar especificamente una branch del repositorio GitHub
+9. es posible clonar específicamente una branch del repositorio GitHub
