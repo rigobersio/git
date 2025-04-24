@@ -1,8 +1,7 @@
 # branch --> merge
 
 1. hacer un nuevo branch: git branch <nombre-branch>
-
-<!-- Mejora: Mencionar que este comando solo crea la rama pero no cambia a ella. Sería útil añadir que para crear y cambiar a la nueva rama en un solo paso se puede usar: git checkout -b <nombre-branch> -->
+    a. para crear y cambiar inmediatamente a la nueva branch: git checkout -b <nombre-branch>
 
 2. ver todos: git branch
 
