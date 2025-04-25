@@ -3,9 +3,8 @@
 1. hacer un nuevo branch: git branch <nombre-branch>
     a. para crear y cambiar inmediatamente a la nueva branch: git checkout -b <nombre-branch>
 
-2. ver todos: git branch
-
-<!-- Mejora: Añadir que git branch -a muestra todas las ramas, incluyendo las remotas -->
+2. ver todas las ramas: git branch
+    a. adicionalmente con: git branch -a se pueden incluir las ramas remotas
 
 3. eliminar branch: git branch -d <nombre-branch>
 
