@@ -7,8 +7,7 @@
     a. adicionalmente con: git branch -a se pueden incluir las ramas remotas
 
 3. eliminar branch: git branch -d <nombre-branch>
-
-<!-- Mejora: Mencionar que -d solo elimina ramas que ya han sido fusionadas. Para forzar la eliminación de una rama no fusionada se usa -D -->
+    a. es necesario mencionar que `-d` solo elimina ramas que ya han sido fusionadas. Para forzar la eliminación de una rama no fusionada se usa `-D`
 
 4. para hacer un merge:
 	a. hacer commit para finalizar la branch experimental
