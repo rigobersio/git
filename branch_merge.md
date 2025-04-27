@@ -12,10 +12,8 @@
 4. para hacer un merge:
 	a. hacer commit para finalizar la branch experimental
 	b. cambiar a la branch  madre con git checkout <branch-madre>
-	c. merge: git merge <nombre-branch-experimental>
-
-<!-- Mejora: Explicar que pueden surgir conflictos durante el merge y cómo resolverlos básicamente -->
-
+	c. merge: git merge <nombre-branch-experimental
+    d. en el caso de que se produzca un conflicto una de las mejores alternativas para resolverlos es en el editor de código (por ejemplo VS Code) ocupando la interface gráfica
 
 5. después de un merge las 2 ramas son virtualmente iguales
 incluso un git add no marca diferencia. la diferencia empieza con
