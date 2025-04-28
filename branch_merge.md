@@ -19,7 +19,7 @@
 incluso un git add no marca diferencia. la diferencia empieza con
 un commit.
 
-<!-- Corrección: Se corrigió "marge" por "merge". Mejora: Aclarar que después del merge, ambas ramas contienen los mismos commits, pero siguen siendo ramas independientes que pueden divergir con nuevos commits -->
+<!-- después del merge, ambas ramas contienen los mismos commits, pero siguen siendo ramas independientes que pueden divergir con nuevos commits -->
 
 6. de la misma forma cuando se crea una nueva branch es necesario
 hacer un commit para marcar diferencia.
