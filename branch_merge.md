@@ -24,7 +24,7 @@ un commit.
 6. de la misma forma cuando se crea una nueva branch es necesario
 hacer un commit para marcar diferencia.
 
-<!-- Mejora: Explicar que una nueva rama hereda todos los commits de la rama de origen, y solo diverge cuando se hacen nuevos commits en ella -->
+<!-- una nueva rama hereda todos los commits de la rama de origen, y solo diverge cuando se hacen nuevos commits en ella -->
 
 7. respecto a GitHub:
 	a. luego de un merge se crea un commit en automático
