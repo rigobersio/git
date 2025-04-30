@@ -32,7 +32,7 @@ hacer un commit para marcar diferencia.
 	c. es recomendable hacer un git push -u origin main (o como
 	se llame la rama)
 
-<!-- Mejora: Aclarar que el commit automático ocurre cuando se hace el merge a través de la interfaz de GitHub (pull request). Añadir espacio después de "main" para mejor legibilidad -->
+<!-- el commit automático ocurre cuando se hace el merge a través de la interfaz de GitHub (pull request) o algunos editores de código modernos. -->
 
 7.1. como alternativa usual a punto 4
     a. cuando se trabaja en equipo cada actualización se desarrolla en una rama y al finalizar el desarrollo se realiza una solicitud de cambio o pull request para incorporar los cambios. Para evitar errores y asegurarse de que la rama de desarrollo no sea conflictiva respecto a la rama a la que se incorporarán los cambios es muy conveniente hacer una revisión de manera local con un <merge>. Para hacer esto se necesita tener actualizada la rama principal con <git pull origin main> y luego llevar cualquier actualización a la rama de desarrollo con <git merge main> (para hacer esto hay que estar posicionado en la rama de desarrollo). Los editores de código modernos ofrecen interfaces interactivas para corregir cualquier tipo de conflicto.
