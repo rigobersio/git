@@ -37,8 +37,6 @@ hacer un commit para marcar diferencia.
 7.1. como alternativa usual a punto 4
     a. cuando se trabaja en equipo cada actualización se desarrolla en una rama y al finalizar el desarrollo se realiza una solicitud de cambio o pull request para incorporar los cambios. Para evitar errores y asegurarse de que la rama de desarrollo no sea conflictiva respecto a la rama a la que se incorporarán los cambios es muy conveniente hacer una revisión de manera local con un <merge>. Para hacer esto se necesita tener actualizada la rama principal con <git pull origin main> y luego llevar cualquier actualización a la rama de desarrollo con <git merge main> (para hacer esto hay que estar posicionado en la rama de desarrollo). Los editores de código modernos ofrecen interfaces interactivas para corregir cualquier tipo de conflicto.
 
-<!-- Corrección: Se corrigió "incorporaran" por "incorporarán", "revision" por "revisión", "posesionado" por "posicionado" y se mejoró la puntuación. Mejora: Considerar dividir este párrafo largo en puntos más concisos para facilitar la lectura -->
-
 8. luego de que se crea una nueva branch y se hace el primer commit
 cualquier cambio pendiente (sin otro commit) impedirá cambiar a otra
 branch aun haciendo git checkout
