@@ -44,7 +44,6 @@ branch aun haciendo git checkout
 <!-- Mejora: Mencionar que se puede usar git stash para guardar temporalmente los cambios pendientes y poder cambiar de rama. También aclarar que git checkout --force permitiría cambiar descartando los cambios -->
 
 9. es posible clonar específicamente una branch del repositorio GitHub
+	a. para realizar esta acción: git clone -b <nombre-rama> <url-repositorio>
 
-<!-- Mejora: Añadir el comando específico: git clone -b <nombre-rama> <url-repositorio> -->
-
-<!-- Sugerencia general: Considerar añadir una sección sobre resolución de conflictos durante el merge y otra sobre buenas prácticas al trabajar con ramas en equipos -->
+<!-- Sugerencia: Considerar añadir una sección sobre resolución de conflictos durante el merge -->
