@@ -41,7 +41,17 @@ hacer un commit para marcar diferencia.
 cualquier cambio pendiente (sin otro commit) impedirá cambiar a otra
 branch aun haciendo git checkout
 
-<!-- Mejora: Mencionar que se puede usar git stash para guardar temporalmente los cambios pendientes y poder cambiar de rama. También aclarar que git checkout --force permitiría cambiar descartando los cambios -->
+8.1. para solucionar esto se puede usar:
+    a. git stash save "mensaje descriptivo"
+       # guarda temporalmente los cambios pendientes en una pila
+    b. git checkout <otra-rama>
+       # ahora es posible cambiar de rama sin problemas
+    c. git stash pop
+       # recupera los cambios guardados cuando vuelvas a la rama original
+
+8.2. otra alternativa es usar:
+    a. git checkout --force <otra-rama>
+       # cambia de rama descartando los cambios pendientes (¡cuidado!). En este caso los cambios no guardados se perderán.
 
 9. es posible clonar específicamente una branch del repositorio GitHub
 	a. para realizar esta acción: git clone -b <nombre-rama> <url-repositorio>
