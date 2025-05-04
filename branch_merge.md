@@ -1,59 +1,70 @@
-# branch --> merge
+# Branch & Merge en Git
 
-1. hacer un nuevo branch: git branch <nombre-branch>
-    a. para crear y cambiar inmediatamente a la nueva branch: git checkout -b <nombre-branch>
+1. Crear un nuevo branch: `git branch <nombre-branch>`
+    a. Para crear y cambiar inmediatamente al nuevo branch: `git checkout -b <nombre-branch>`
 
-2. ver todas las ramas: git branch
-    a. adicionalmente con: git branch -a se pueden incluir las ramas remotas
+2. Ver todos los branches: `git branch`
+    a. Adicionalmente, con `git branch -a` se pueden visualizar también los branches remotos
 
-3. eliminar branch: git branch -d <nombre-branch>
-    a. es necesario mencionar que `-d` solo elimina ramas que ya han sido fusionadas. Para forzar la eliminación de una rama no fusionada se usa `-D`
+3. Eliminar un branch: `git branch -d <nombre-branch>`
+    a. Es importante destacar que `-d` solo elimina branches que ya han sido mergeados. Para forzar la eliminación de un branch no mergeado se usa `-D`
 
-4. para hacer un merge:
-	a. hacer commit para finalizar la branch experimental
-	b. cambiar a la branch  madre con git checkout <branch-madre>
-	c. merge: git merge <nombre-branch-experimental
-    d. en el caso de que se produzca un conflicto una de las mejores alternativas para resolverlos es en el editor de código (por ejemplo VS Code) ocupando la interface gráfica
+4. Para realizar un merge:
+	a. Hacer commit para finalizar los cambios en el branch experimental
+	b. Cambiar al branch destino con `git checkout <branch-destino>`
+	c. Merge: `git merge <nombre-branch-experimental>`
+    d. En caso de conflictos, una de las mejores alternativas para resolverlos es utilizar la interfaz gráfica de un editor de código (por ejemplo VS Code)
 
-5. después de un merge las 2 ramas son virtualmente iguales
-incluso un git add no marca diferencia. la diferencia empieza con
-un commit.
+5. Después de un merge, los dos branches son virtualmente idénticos.
+   Incluso un `git add` no marcará diferencias entre ellos. Las diferencias
+   comenzarán a aparecer cuando se realice un nuevo commit en alguno de los branches.
 
-<!-- después del merge, ambas ramas contienen los mismos commits, pero siguen siendo ramas independientes que pueden divergir con nuevos commits -->
+<!-- Después del merge, ambos branches contienen los mismos commits, pero siguen siendo branches independientes que pueden divergir con nuevos commits -->
 
-6. de la misma forma cuando se crea una nueva branch es necesario
-hacer un commit para marcar diferencia.
+6. De manera similar, cuando se crea un nuevo branch es necesario
+   realizar un commit para que exista una diferencia visible entre los branches.
 
-<!-- una nueva rama hereda todos los commits de la rama de origen, y solo diverge cuando se hacen nuevos commits en ella -->
+<!-- Un nuevo branch hereda todos los commits del branch de origen, y solo diverge cuando se hacen nuevos commits en él -->
 
-7. respecto a GitHub:
-	a. luego de un merge se crea un commit en automático
-	b. entonces un git status no muestra cambios pendientes
-	c. es recomendable hacer un git push -u origin main (o como
-	se llame la rama)
+7. Respecto a GitHub:
+	a. Luego de un merge se crea un commit automáticamente
+	b. Por lo tanto, `git status` no mostrará cambios pendientes
+	c. Es recomendable ejecutar `git push -u origin main` (o el nombre
+	   correspondiente del branch) para sincronizar con el repositorio remoto
 
-<!-- el commit automático ocurre cuando se hace el merge a través de la interfaz de GitHub (pull request) o algunos editores de código modernos. -->
+<!-- El commit automático ocurre cuando se hace el merge a través de la interfaz de GitHub (pull request) o algunos editores de código modernos -->
 
-7.1. como alternativa usual a punto 4
-    a. cuando se trabaja en equipo cada actualización se desarrolla en una rama y al finalizar el desarrollo se realiza una solicitud de cambio o pull request para incorporar los cambios. Para evitar errores y asegurarse de que la rama de desarrollo no sea conflictiva respecto a la rama a la que se incorporarán los cambios es muy conveniente hacer una revisión de manera local con un <merge>. Para hacer esto se necesita tener actualizada la rama principal con <git pull origin main> y luego llevar cualquier actualización a la rama de desarrollo con <git merge main> (para hacer esto hay que estar posicionado en la rama de desarrollo). Los editores de código modernos ofrecen interfaces interactivas para corregir cualquier tipo de conflicto.
+7.1. Como alternativa usual al punto 4 (flujo de trabajo en equipo):
+    a. Cuando se trabaja en equipo, cada actualización se desarrolla en un branch separado. Al finalizar el desarrollo, se realiza una solicitud de cambios o pull request para incorporar las modificaciones.
+    
+    b. Para evitar errores y asegurarse de que el branch de desarrollo no presente conflictos con el branch destino, es muy conveniente realizar una revisión previa de manera local con un merge.
+    
+    c. Para esto, primero se debe actualizar el branch principal con:
+       `git pull origin main`
+    
+    d. Luego, estando posicionado en el branch de desarrollo, incorporar los cambios del branch principal:
+       `git merge main`
+    
+    e. Los editores de código modernos ofrecen interfaces interactivas para resolver cualquier tipo de conflicto que pueda surgir.
 
-8. luego de que se crea una nueva branch y se hace el primer commit
-cualquier cambio pendiente (sin otro commit) impedirá cambiar a otra
-branch aun haciendo git checkout
+8. Después de crear un nuevo branch y realizar el primer commit,
+   cualquier cambio pendiente (sin confirmar con otro commit) impedirá cambiar
+   a otro branch, incluso utilizando `git checkout`
 
-8.1. para solucionar esto se puede usar:
-    a. git stash save "mensaje descriptivo"
-       # guarda temporalmente los cambios pendientes en una pila
-    b. git checkout <otra-rama>
-       # ahora es posible cambiar de rama sin problemas
-    c. git stash pop
-       # recupera los cambios guardados cuando vuelvas a la rama original
+8.1. Para solucionar este problema se puede usar:
+    a. `git stash save "mensaje descriptivo"`
+       # Guarda temporalmente los cambios pendientes en una pila
+    b. `git checkout <otro-branch>`
+       # Ahora es posible cambiar de branch sin problemas
+    c. `git stash pop`
+       # Recupera los cambios guardados cuando vuelvas al branch original
 
-8.2. otra alternativa es usar:
-    a. git checkout --force <otra-rama>
-       # cambia de rama descartando los cambios pendientes (¡cuidado!). En este caso los cambios no guardados se perderán.
+8.2. Otra alternativa es usar:
+    a. `git checkout --force <otro-branch>`
+       # Cambia de branch descartando los cambios pendientes (¡cuidado!). En este caso los cambios no guardados se perderán permanentemente.
 
-9. es posible clonar específicamente una branch del repositorio GitHub
-	a. para realizar esta acción: git clone -b <nombre-rama> <url-repositorio>
+9. Es posible clonar específicamente un branch del repositorio GitHub:
+	a. Para realizar esta acción: `git clone -b <nombre-branch> <url-repositorio>`
+	b. Esto descargará únicamente el branch especificado, lo que puede ser útil cuando solo se necesita trabajar con una parte específica del proyecto
 
-<!-- Sugerencia: Considerar añadir una sección sobre resolución de conflictos durante el merge -->
+<!-- Sugerencia: Considerar añadir una sección detallada sobre resolución de conflictos durante el merge, incluyendo ejemplos prácticos -->
