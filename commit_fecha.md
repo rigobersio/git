@@ -3,8 +3,14 @@
 
 git add . && GIT_AUTHOR_DATE="2025-03-01T17:33:00" GIT_COMMITTER_DATE="2025-03-01T17:33:00" git commit -m "mensaje" && git push -u origin main
 
+<!-- Este ejemplo muestra un comando complejo que combina múltiples operaciones en una sola línea. Sería más claro separar estas operaciones para mayor legibilidad y comprensión. -->
+<!-- El título "example" es demasiado genérico y no indica claramente el propósito del documento. -->
+
 - Git permite hacer commit con fechas que no sean cronológicamente lineales
 - Existen algunos repositorios con proteciones, como por ejemplo, GitHub que por defecto no permite retroceder cronológicamente
+
+<!-- Esta sección carece de contexto sobre cuándo y por qué alguien querría modificar fechas de commit. -->
+<!-- Hay un error ortográfico en "proteciones", debería ser "protecciones". -->
 ## en caso de cometer este error
 
 git log --oneline para obtener los hash del los commit de manera abreviada
@@ -19,5 +25,10 @@ git reset --mixed <commit-hash>
 
 
 Este comando restablece la rama actual al commit especificado y deja los cambios posteriores sin confirmar en el área de trabajo.
+
+<!-- Esta sección no especifica claramente cuál es "este error" mencionado en el título. -->
+<!-- La estructura es inconsistente: mezcla texto plano con lo que parece ser un bloque de código sin formato adecuado. -->
+<!-- Hay un error gramatical en "del los commit", debería ser "de los commits". -->
+<!-- El término "rama" se usa aquí, pero en otras partes del repositorio se usa "branch", lo que crea inconsistencia terminológica. -->
 
 
