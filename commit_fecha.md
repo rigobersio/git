@@ -1,10 +1,27 @@
 
-# example.
+# Commits con Fecha Personalizada en Git
 
+## Comandos complejos para manipulación de fechas
+
+Git permite modificar las fechas de autor y de commit mediante variables de entorno. El siguiente comando combina múltiples operaciones para crear un commit con una fecha específica y subirlo al repositorio remoto:
+
+```bash
 git add . && GIT_AUTHOR_DATE="2025-03-01T17:33:00" GIT_COMMITTER_DATE="2025-03-01T17:33:00" git commit -m "mensaje" && git push -u origin main
+```
 
-<!-- Este ejemplo muestra un comando complejo que combina múltiples operaciones en una sola línea. Sería más claro separar estas operaciones para mayor legibilidad y comprensión. -->
-<!-- El título "example" es demasiado genérico y no indica claramente el propósito del documento. -->
+### Explicación por partes:
+
+1. `git add .` - Añade todos los archivos modificados al área de preparación (staging)
+
+2. `GIT_AUTHOR_DATE="2025-03-01T17:33:00"` - Establece la fecha de autoría del commit (cuándo se escribieron los cambios)
+
+3. `GIT_COMMITTER_DATE="2025-03-01T17:33:00"` - Establece la fecha de confirmación del commit (cuándo se registró en el repositorio)
+
+4. `git commit -m "mensaje"` - Crea el commit con el mensaje especificado y las fechas personalizadas
+
+5. `git push -u origin main` - Sube los cambios a la rama principal del repositorio remoto
+
+<!-- Los comandos complejos son útiles para scripts y automatización, pero dificultan la comprensión para principiantes -->
 
 - Git permite hacer commit con fechas que no sean cronológicamente lineales
 - Existen algunos repositorios con proteciones, como por ejemplo, GitHub que por defecto no permite retroceder cronológicamente
