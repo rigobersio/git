@@ -21,7 +21,7 @@ git add . && GIT_AUTHOR_DATE="2025-03-01T17:33:00" GIT_COMMITTER_DATE="2025-03-0
 
 5. `git push -u origin main` - Sube los cambios a la rama principal del repositorio remoto
 
-<!-- Los comandos complejos son útiles para scripts y automatización, pero dificultan la comprensión para principiantes -->
+<!-- -->
 
 - Git permite hacer commit con fechas que no sean cronológicamente lineales
 - Existen algunos repositorios con proteciones, como por ejemplo, GitHub que por defecto no permite retroceder cronológicamente
