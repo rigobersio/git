@@ -26,6 +26,14 @@ git add . && GIT_AUTHOR_DATE="2025-03-01T17:33:00" GIT_COMMITTER_DATE="2025-03-0
 - Git permite hacer commit con fechas que no sean cronológicamente lineales
 - Existen algunos repositorios con proteciones, como por ejemplo, GitHub que por defecto no permite retroceder cronológicamente
 
+<!-- Nota sobre riesgos -->
+- Editar fechas de commits ya publicados puede causar inconsistencias en el historial
+- Hacer nuevos commits con fechas anteriores al último commit puede:
+  * Confundir el orden cronológico en GitHub
+  * Afectar herramientas que dependen del historial lineal
+  * Generar conflictos en pull requests
+  
+
 
 ## en caso de cometer este error
 
