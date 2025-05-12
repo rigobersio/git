@@ -32,7 +32,7 @@ git add . && GIT_AUTHOR_DATE="2025-03-01T17:33:00" GIT_COMMITTER_DATE="2025-03-0
   * Confundir el orden cronológico en GitHub
   * Afectar herramientas que dependen del historial lineal
   * Generar conflictos en pull requests
-  
+  * Requerir force push (--force) que puede afectar a otros colaboradores
 
 
 ## en caso de cometer este error
