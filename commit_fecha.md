@@ -55,4 +55,14 @@ Este comando restablece la rama actual al commit especificado y deja los cambios
 <!-- Hay un error gramatical en "del los commit", debería ser "de los commits". -->
 <!-- El término "rama" se usa aquí, pero en otras partes del repositorio se usa "branch", lo que crea inconsistencia terminológica. -->
 
+## Alternativa más segura
+
+Para modificar commits recientes sin alterar el historial compartido:
+
+```bash
+git commit --amend --reset-author --date="YYYY-MM-DDThh:mm:ss"
+```
+
+Este método solo funciona para el último commit y es más seguro para repositorios colaborativos.
+
 
